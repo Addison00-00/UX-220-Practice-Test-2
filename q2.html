@@ -13,7 +13,7 @@
             margin: auto;
             padding: 50px;
             background: #ffffff;
-            border: 10px solid #f2f2f2;
+            border: 5px solid #55ead4;
         }
 
         .form-group[data-color="blue"] {
@@ -25,6 +25,18 @@
             background-color: #ffffff;
             padding: 0.5em;
         }
+
+        .form-box h1 {
+            color: #FF06B5 !important;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+            font-weight: 600px !important;
+        }
+
+        .form-box label {
+            color: #FCEE0C !important;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+            font-weight: 600px !important;
+        }
     </style>
 </head>
 
@@ -33,19 +45,19 @@
         <section id="contact">
             <div id="contact_markdown"></div>
             <div class="form-box">
-                <h1>Contact Me!</h1>
+                <h1>Contact Me</h1>
                 <p>Using <a href="https://getbootstrap.com">Bootstrap</a> and <a
                         href="https://www.formbucket.com">FormBucket</a></p>
                 <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
-                    <div class="form-group">
+                    <div class="form-group" data-color="blue">
                         <label for="name">First and Last Name</label>
                         <input class="form-control" id="name" type="text" name="Name">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" data-color="blue">
                         <label for="email">Email Address</label>
                         <input class="form-control" id="email" type="email" name="Email">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" data-color="blue">
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" name="Message"></textarea>
                     </div>
